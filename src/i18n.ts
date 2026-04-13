@@ -29,7 +29,7 @@ export const translations: Record<Lang, Dict> = {
     subtitle:
       "아무 메시지나 입력하면 자동으로 단어별로 나누고, 종이 한 장에 여러 단어를 배치한 뒤 절단선까지 그려줍니다.",
     inputLabel: "메시지",
-    inputPlaceholder: "예) Mumin is so cute...",
+    inputPlaceholder: "예) 축하해 오늘은 너의 날...",
     paperSize: "용지",
     orientation: "방향",
     landscape: "가로",
@@ -53,7 +53,7 @@ export const translations: Record<Lang, Dict> = {
     subtitle:
       "Type any message, and we'll split it into words, pack them onto pages, and draw cut lines.",
     inputLabel: "Message",
-    inputPlaceholder: "e.g. Mumin is so cute...",
+    inputPlaceholder: "e.g. Happy birthday friend...",
     paperSize: "Paper",
     orientation: "Orientation",
     landscape: "Landscape",

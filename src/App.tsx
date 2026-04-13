@@ -5,11 +5,9 @@ import { getDict } from "./i18n";
 import { autoFontPt, detectOverflow, pack } from "./lib/pack";
 import type { AppOptions, Lang, PaperDims } from "./types";
 
-const DEFAULT_MESSAGE = `Mumin is so cute and kind and pretty
-Unbelievably hard working
-Maybe works too hard…
-Is she even sleeping?
-Nevertheless, always shining :)`;
+const DEFAULT_MESSAGE = `축하해 오늘은 너의 날!
+하루하루 웃음 가득하길
+해마다 더 빛나는 너이길`;
 
 const DEFAULT_OPTIONS: AppOptions = {
   paperSize: "A4",
