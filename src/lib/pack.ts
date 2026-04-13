@@ -24,7 +24,9 @@ export function pack({
     const wMm = measureWordMm(w, fontPt);
     const nextCount = current.words.length + 1;
     const nextSum = sum(current.widthsMm) + wMm;
-    const nextTotal = nextSum + 2 * nextCount * gapMm;
+    // Layout: [cut] gap w1 gap w2 gap ... wN gap [cut]
+    // => sum(widths) + (N + 1) * gap
+    const nextTotal = nextSum + (nextCount + 1) * gapMm;
 
     if (nextTotal <= budget) {
       current.words.push(w);

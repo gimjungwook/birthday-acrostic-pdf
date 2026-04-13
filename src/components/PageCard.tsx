@@ -23,15 +23,15 @@ export function PageCard({
   scale,
 }: Props) {
   const items: ReactNode[] = [];
-  items.push(<CutLine key="cut-0" show={options.showCutMarks} />);
+  items.push(<CutLine key="cut-left" show={options.showCutMarks} />);
   page.words.forEach((w, i) => {
     items.push(
       <div key={`w-${i}`} className="word" style={{ fontSize: `${fontPt}pt` }}>
         {w}
       </div>,
     );
-    items.push(<CutLine key={`cut-${i + 1}`} show={options.showCutMarks} />);
   });
+  items.push(<CutLine key="cut-right" show={options.showCutMarks} />);
 
   const wrapperStyle: CSSProperties = {
     width: `calc(${paperWidthMm}mm * ${scale})`,
